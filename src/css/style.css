@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron&family=Limelight&family=Righteous&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(68.15deg,#33013b 16.62%, #87029c 85.61%);
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.cabecalho-img {
+  padding-top: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+  cursor: pointer;
+}
+
+nav a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: #e292ee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+ 
+.cabecalho-menu-item {
+  font-family: 'Kameron', serif;
+  color: #f2e3db;
+  font-weight: 400;
+  font-size: 18px;
+  position: relative;
+}
+
+.conteudo {
+  padding-top: 50px;
+  margin-bottom: 48px;
+  border-top: 0.4px solid #f2e3db;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: 'Righteous', serif;
+  font-weight: 400;
+  font-size: 64px;
+  color: #f2e3db;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: 'Kameron', serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #f2e3db;
+}
+
+.conteudo-principal-escrito-botao {
+  background-color: #f2e3db;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Kameron', serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2f2f2f;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ancora {
+  text-decoration: none;
+  color: #32023a;
+}
+
+.conteudo-principal-imagem {
+  height: 430px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #f2e3db;
+  padding-top: 48px;
+  font-family: 'Rigtheos', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #f2e3db;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: 'Kameron', serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #f2e3db;
+}
+
+.rodape {
+  padding: 32px;
+  border-top: 0.4px solid #f2e3db;
+  display: flex;
+  justify-content: center;
+}
+
+.rodape-titulo {
+  color: #f2e3db;
+}
