@@ -7,20 +7,20 @@
   <title>ArtGo</title>
   <meta name="description" content="Um site destinado para artistas e apreciadores de artes">
   <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
 <body>
   <header class="cabecalho">
     <img class="cabecalho-img" src="./src/img/logo.png" alt="logoimg">
     <nav class="cabecalho-menu">
-      <a class="cabecalho-menu-item">Início</a>
-      <a class="cabecalho-menu-item">Sobre nós</a>
-      <a class="cabecalho-menu-item">Serviços</a>
-      <a class="cabecalho-menu-item">Contato</a>
+      <a class="cabecalho-menu-item" href="#home">Início</a>
+      <a class="cabecalho-menu-item" href="#info">Sobre nós</a>
+      <a class="cabecalho-menu-item" href="#services">Serviços</a>
+      <a class="cabecalho-menu-item" href="#contact">Contato</a>
     </nav>
   </header>
-
   <main class="conteudo">
-    <section class="conteudo-principal">
+    <section class="conteudo-principal" id="home">
       <div class="conteudo-principal-escrito">
         <h1 class="conteudo-principal-escrito-titulo">ArtGo</h1>
         <h2 class="conteudo-principal-escrito-subtitulo">Conhecer a arte é se conectar-se com si mesmo.</h2>
@@ -28,19 +28,34 @@
       </div>
       <img class="conteudo-principal-imagem" src="./src/img/artist.png" alt="artistimg">      
     </section>
-      
-    <section class="conteudo-secundario">
-      <h3 class="conteudo-secundario-titulo">O que fazemos por você?</h3>
-      <p class="conteudo-secundario-paragrafo">1. Fazemos <strong>upload de suas artes</strong> para visão publica</p>
-      <p class="conteudo-secundario-paragrafo">2. Sistema de <strong>comissões</strong></p>
-      <p class="conteudo-secundario-paragrafo">3. <strong>Chat</strong> para artistas</p>
-      <p class="conteudo-secundario-paragrafo">4. <strong>Competiçoes de artes</strong> de forma democrática</p>
-      <p class="conteudo-secundario-paragrafo">5. <strong>Salvamos suas artes</strong> no ArtGallery digital</p>
+    <div class="borda"></div>
+    <section class="conteudo-secundario" id="info">
+      <h3 class="conteudo-secundario-titulo">O que é o ArtGo?</h3>
+      <p class="conteudo-secundario-paragrafo">O ArtGo é uma rede social para artistas e apreciadores de artes. O principal objetivo dessa rede social é manter vários artistas em contato e poderem se divertirem juntos.</p>
+    </section>
+    <div class="borda"></div>
+    <section class="conteudo-terciario" id="services">
+      <h3 class="conteudo-terciario-titulo">O que fazemos por você?</h3>
+      <section class="conteudo-terciario-grupo">
+        <p class="conteudo-terciario-paragrafo">1. Fazemos <strong>upload de suas artes</strong> para visão publica</p>
+        <p class="conteudo-terciario-paragrafo">2. Sistema de <strong>comissões</strong></p>
+        <p class="conteudo-terciario-paragrafo">3. <strong>Chat</strong> para artistas</p>
+        <p class="conteudo-terciario-paragrafo">4. <strong>Competiçoes de artes</strong> de forma democrática</p>
+        <p class="conteudo-terciario-paragrafo">5. <strong>Salvamos suas artes</strong> no ArtGallery digital</p>
+      </section>
+    </section>
+    <div class="borda"></div>
+    <section class="conteudo-quartenario" id="contact">
+      <h3 class="conteudo-quartenario-titulo">Contate-nos</h3>
+        <input type="text" id="email" placeholder="Digite seu melhor email" class="conteudo-quartenario-emailInput">
+        <button class="conteudo-quartenario-botao" onclick="emailValidate()">Enviar</button>
+        <span id="mensagem-erro">Digite um email válido!</span>
+        <span id="mensagem-sucesso">Email enviado com succeso!</span>
     </section>
   </main>
-
   <footer class="rodape">
        <h2 class="rodape-titulo">ArtGo</h2>
   </footer> 
+  <script src="./src/js/script.js"></script>
 </body>
 </html>
