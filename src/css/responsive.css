@@ -1,0 +1,132 @@
+@media (max-width: 1300px) {
+    .conteudo-secundario-titulo {
+        margin-left: 5em;
+    }
+
+    .conteudo-secundario-paragrafo {
+        margin-left: 15em;
+    }
+}
+
+@media (max-width: 1079px) {
+    .conteudo-secundario {
+        width: 100%;
+    }
+
+    .conteudo-secundario-titulo {
+        margin-left: 3em;
+    }
+
+    .conteudo-secundario-paragrafo {
+        width: 15em;
+        margin: 0 0 0 15em;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .cabecalho-menu {
+        gap: 2em;
+    }
+    .conteudo-principal-imagem {
+        height: 25em;
+        width: 22em;
+        margin-top: 2em;
+    }
+
+    .conteudo-secundario {
+        width: 100%;
+    }
+
+    .conteudo-secundario-titulo {
+        margin-left: 1em;
+    }
+
+    .conteudo-secundario-paragrafo {
+        width: 15em;
+        margin-left: 5em;
+    }
+}
+
+@media (max-width: 450px) {
+
+    body {
+        background-size: cover;
+    }
+
+    .cabecalho-img {
+        width: 3em;
+        height: 3em;
+    }
+
+    .cabecalho {
+        padding: 0.5em;
+    }
+
+    .cabecalho-menu-item {
+        font-size: 1em;
+    }
+
+    .cabecalho-menu {
+        gap: 1em;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        font-size: 3em;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-family: 'Kameron', serif;
+        font-weight: 400;
+        font-size: 2em;
+        width: 8em;
+    }
+
+    .conteudo-secundario-titulo {
+        font-size: 1em;
+        margin-left: .5em;
+    }
+
+    .conteudo-principal-imagem {
+        width: 20em;
+    }
+
+    .conteudo-secundario-paragrafo {
+        font-size: .8em;
+        align-self: end;
+        margin-right: 1em;
+        width: 11em;
+    }
+
+    .conteudo-terciario-titulo {
+        font-size: 1.5em;
+    }
+
+    .conteudo-terciario-grupo {
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+
+    .conteudo-quartenario-emailInput {
+        width: 17em;
+        font-size: .6em;
+    }
+
+    .conteudo-quartenario-botao {
+        width: 12em;
+    }
+}
+
+@media (max-width: 281px) {
+    .conteudo-secundario-paragrafo {
+        padding-left: 2em;
+    }
+
+    .conteudo-quartenario-emailInput {
+        width: 13em;
+    }
+}
