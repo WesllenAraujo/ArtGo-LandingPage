@@ -5,11 +5,16 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 100%;
-  background: linear-gradient(68.15deg,#33013b 16.62%, #87029c 85.61%);
+  background-color: #32023a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f2e3db;
+  font-family: 'Kameron', sans-serif;
 }
 
 .cabecalho {
@@ -17,19 +22,21 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 24px;
+  padding: 1em;
+  align-items: center;
+  width: 100%;
 }
 
 .cabecalho-img {
-  padding-top: 10px;
-  width: 80px;
-  height: 80px;
+  width: 4em;
+  height: 4em;
 }
 
 .cabecalho-menu {
   display: flex;
-  gap: 32px;
+  gap: 5em;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 
 nav a::after {
@@ -44,21 +51,23 @@ nav a::after {
   border-radius: 3px;
 }
 
+nav a {
+  color: #f2e3db;
+}
+
 nav a:hover::after {
   width: 100%;
 }
  
 .cabecalho-menu-item {
   font-family: 'Kameron', serif;
-  color: #f2e3db;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.4em;
   position: relative;
 }
 
 .conteudo {
-  padding-top: 50px;
-  margin-bottom: 48px;
+  padding-top: 3em;
   border-top: 0.4px solid #f2e3db;
 }
 
@@ -67,41 +76,46 @@ nav a:hover::after {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .conteudo-principal-escrito {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2em;
 }
 
 .conteudo-principal-escrito-titulo {
   font-family: 'Righteous', serif;
   font-weight: 400;
-  font-size: 64px;
-  color: #f2e3db;
+  font-size: 4em;
 }
 
 .conteudo-principal-escrito-subtitulo {
   font-family: 'Kameron', serif;
   font-weight: 400;
-  font-size: 24px;
-  color: #f2e3db;
+  font-size: 2em;
+  width: 13em;
 }
 
 .conteudo-principal-escrito-botao {
   background-color: #f2e3db;
-  width: 180px;
-  height: 60px;
+  width: 8em;
+  height: 2em;
   border: none;
   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   font-family: 'Kameron', serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #2f2f2f;
   cursor: pointer;
   text-decoration: none;
+}
+
+.conteudo-principal-escrito-botao:hover {
+  background-color: #dcb3ed;
 }
 
 .ancora {
@@ -110,41 +124,118 @@ nav a:hover::after {
 }
 
 .conteudo-principal-imagem {
-  height: 430px;
+  height: 25em;
 }
 
 .conteudo-secundario {
+  font-size: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  margin-top: 48px;
+  width: 100%;
+  text-align: left;
+  margin: auto;
+}
+
+.borda {
+  width: 20em;
+  margin: auto;
+  border: 1px solid #f2e3db;
+  margin: 5em auto;
 }
 
 .conteudo-secundario-titulo {
-  border-top: 0.4px solid #f2e3db;
-  padding-top: 48px;
-  font-family: 'Rigtheos', cursive;
-  font-weight: 400;
-  font-size: 24px;
-  color: #f2e3db;
-  margin-bottom: 16px;
+  font-family: 'Righteos', cursive;
+  margin: 0 0 1em 10em;
 }
 
 .conteudo-secundario-paragrafo {
+  width: 20em;
+  margin: 1em 0 0 20em;
+}
+
+.conteudo-terciario {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  width: 100%;
+}
+
+.conteudo-terciario-titulo {
+  font-family: 'Rigtheos', cursive;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.conteudo-terciario-grupo {
   font-family: 'Kameron', serif;
   font-weight: 300;
-  font-size: 18px;
-  color: #f2e3db;
+  font-size:  1.5em;
+  margin: .5em;
+}
+
+.conteudo-terciario-paragrafo:not(:nth-child(1)) {
+  margin: 2em 0 1em;
+}
+
+.conteudo-quartenario {
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.conteudo-quartenario-titulo {
+  font-family: 'Rigtheos', cursive;
+  margin-bottom: 2em;
+}
+
+.conteudo-quartenario-emailInput {
+  font-size: .7em;
+  width: 20em;
+  height: 2em;
+  padding: .3em;
+  border: none;
+  border-radius: .5em;
+}
+
+.conteudo-quartenario-botao {
+  width: 15em;
+  font-size: .7em;
+  padding: .2em;
+  margin-top: 1em;
+  border: none;
+  border-radius: .5em;
+  background-color: #f2e3db;
+  font-family: 'Kameron', sans-serif;
+  cursor: pointer;
+}
+
+.conteudo-quartenario-botao:hover {
+  background-color: #dcb3ed;
+}
+
+#mensagem-erro {
+  color: #f00;
+  margin-top: .5em;
+  display: none;
+}
+
+#mensagem-sucesso {
+  color: rgb(238, 77, 208);
+  margin-top: .5em;
+  display: none;
 }
 
 .rodape {
-  padding: 32px;
+  padding: .5em;
   border-top: 0.4px solid #f2e3db;
   display: flex;
   justify-content: center;
-}
-
-.rodape-titulo {
-  color: #f2e3db;
+  margin-top: 2em;
+  font-size: 2em;
 }
